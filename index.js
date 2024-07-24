@@ -2,7 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 
 const app = express();
-const port = 3000;
+// const port = 3000;
 app.use(express.static("public"));
 
 const curYear = new Date().getFullYear();
@@ -28,9 +28,9 @@ app.post("/submit", (req, res) => {
   res.render("index.ejs", data)
 });
 
-app.listen(port, () => {
-  console.log(`Listening on port ${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Listening on port ${port}`);
+// });
 
 const adj = [
   "abandoned",
